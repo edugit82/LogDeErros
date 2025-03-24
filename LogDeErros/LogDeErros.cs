@@ -53,9 +53,7 @@ namespace LogDeErros
                     {
                         texto += string.Format("{0}{1}{1}", "--------------Erro--------------", Environment.NewLine);
                         texto += sr.ReadToEnd();
-                    }
-
-                Debug.WriteLine(texto);
+                    }                
 
                 using (StreamWriter sw = new StreamWriter(file))
                     sw.Write(texto);
